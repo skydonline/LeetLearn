@@ -12,9 +12,13 @@ a {
   font-size: var(--font-size-large);
 }
 
+a:hover {
+  color: var(--blue-accent-color);
+}
+
 #copyright {
   color: var(--inactive-text-color);
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-tiny);
 }
 
 #leftSection,
