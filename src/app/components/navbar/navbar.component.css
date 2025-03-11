@@ -1,54 +1,20 @@
-#settingsIcon {
-  color: var(--mat-sys-primary);
-}
-
-#settingsIcon:hover {
-  color: var(--mat-sys-on-primary);
-}
-
-#settingsContainer {
-  background-color: var(--mat-sys-primary-container);
-  border: none;
-  padding: 4px;
-}
-
-#settingsContainer:hover {
-  background-color: var(--mat-sys-on-primary-container);
-}
-
-#settingsContainer:hover #settingsIcon {
-  color: var(--mat-sys-on-primary);
-}
-
-#githubUsernameInput {
-  font-family: var(--mat-sys-body-medium-font);
-  background-color: var(--mat-sys-inverse-surface);
-  padding: 7px;
-  text-align: center;
-}
-
-#githubUsernameInput::placeholder {
-  text-align: center;
-}
-
-div {
+#navbar {
+  height: 70px;
+  width: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  background-color: var(--primary-container-color);
 }
 
-#githubConnect {
-  background-color: var(--mat-sys-primary-container);
-  color: var(--mat-sys-primary);
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  border-radius: var(--mat-sys-corner-large);
-  margin-top: 10px;
+#title {
+  font-size: var(--font-size-title);
 }
 
-#githubConnect:hover {
-  background-color: var(--mat-sys-on-primary-container);
-  color: var(--mat-sys-on-primary);
+#sections {
+  width: 235px;
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 15px;
 }

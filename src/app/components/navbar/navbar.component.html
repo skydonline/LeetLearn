@@ -1,14 +1,7 @@
-<nav>
-  <button id="settingsContainer" (click)="toggleSettings()">
-    <mat-icon id="settingsIcon">settings</mat-icon>
-  </button>
-  <div *ngIf="showSettings">
-    <input
-      id="githubUsernameInput"
-      type="text"
-      [(ngModel)]="githubUsername"
-      placeholder="GitHub username"
-    />
-    <button id="githubConnect" (click)="connectToGithub()">Connect</button>
+<nav id="navbar">
+  <p id="title">LeetLearn</p>
+  <div id="sections">
+    <a routerLink="/home" routerLinkActive="active">GitHub</a>
+    <a routerLink="/about" routerLinkActive="active">Customization</a>
   </div>
 </nav>
