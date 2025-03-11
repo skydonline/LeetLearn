@@ -1,0 +1,15 @@
+{
+  "name": "LeetLearn",
+  "description": "LeetLearn is a Chrome extension that helps you to push your code to LeetCode.",
+  "version": "1.0",
+  "author": "Sky Deng",
+  "manifest_version": 3,
+
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "LeetLearn"
+  },
+
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["https://leetcode.com/*"]
+}

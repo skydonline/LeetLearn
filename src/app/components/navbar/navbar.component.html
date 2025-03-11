@@ -1,0 +1,14 @@
+<nav>
+  <button id="settingsContainer" (click)="toggleSettings()">
+    <mat-icon id="settingsIcon">settings</mat-icon>
+  </button>
+  <div *ngIf="showSettings">
+    <input
+      id="githubUsernameInput"
+      type="text"
+      [(ngModel)]="githubUsername"
+      placeholder="GitHub username"
+    />
+    <button id="githubConnect" (click)="connectToGithub()">Connect</button>
+  </div>
+</nav>
