@@ -1,9 +1,21 @@
-@import "../node_modules/@angular/material/prebuilt-themes/magenta-violet.css";
+:root {
+  --primary-text-color: #ffffff;
+  --primary-container-color: #333333;
+  --secondary-text-color: #a9a9a9;
+  --secondary-container-color: #313131;
+  --inactive-text-color: #797979;
+  --border-color: #464646;
+  --header-color: #282828;
+  --orange-accent-color: #007bff;
+  --blue-accent-color: #0b83fe;
+  --green-accent-color: #45cd75;
+  --background-color: #1e1e1e;
+}
 
 html,
 body {
   margin: 0;
   font-family: Roboto;
   height: 100%;
-  background-color: var(--mat-sys-background);
+  background-color: var(--background-color);
 }
