@@ -6,14 +6,14 @@
   --inactive-text-color: #797979;
   --border-color: #464646;
   --header-color: #282828;
-  --orange-accent-color: #007bff;
+  --orange-accent-color: #ffa115;
   --blue-accent-color: #0b83fe;
   --green-accent-color: #45cd75;
   --background-color: #1e1e1e;
   --font-size-title: 22px;
-  --font-size-large: 18px;
-  --font-size-medium: 16px;
-  --font-size-small: 16px;
+  --font-size-large: 16px;
+  --font-size-medium: 14px;
+  --font-size-small: 12px;
 }
 
 html,

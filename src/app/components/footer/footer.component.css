@@ -1,7 +1,40 @@
 #footerContainer {
   height: 50px;
   width: 100%;
-  margin-top: auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+a {
+  color: var(--orange-accent-color);
+  margin: 0 10px;
+  font-size: var(--font-size-large);
+}
+
+#copyright {
+  color: var(--inactive-text-color);
+  font-size: var(--font-size-small);
+}
+
+#leftSection,
+#rightSection {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+#leftSection {
+  left: 5px;
+}
+
+#rightSection {
+  right: 5px;
+}
+
+#centerSection {
+  flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
