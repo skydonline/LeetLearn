@@ -35,9 +35,31 @@ a:hover {
   cursor: pointer;
 }
 
+a.active-link {
+  color: var(--primary-text-color);
+}
+
 #navbar-bar {
   width: 100%;
   height: 1px;
   background-color: var(--navbar-bar-color);
   margin: 0;
+}
+
+.navbar-selected {
+  height: 1px;
+  margin-bottom: 0;
+  background-color: var(--primary-text-color);
+  position: absolute;
+  z-index: 100;
+}
+
+#github-selected {
+  margin-left: 198px;
+  width: 52px;
+}
+
+#customization-selected {
+  margin-left: 274px;
+  width: 107px;
 }

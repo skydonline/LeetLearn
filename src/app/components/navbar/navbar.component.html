@@ -2,8 +2,20 @@
   <img id="logo" src="assets/LeetLearnLogo128.png" />
   <p id="title">LeetLearn</p>
   <div id="sections">
-    <a routerLink="github">GitHub</a>
-    <a routerLink="customization">Customization</a>
+    <a routerLink="/github" routerLinkActive="active-link">GitHub</a>
+    <a routerLink="/customization" routerLinkActive="active-link"
+      >Customization</a
+    >
   </div>
 </nav>
 <div id="navbar-bar"></div>
+<div
+  id="github-selected"
+  class="navbar-selected"
+  *ngIf="router.url === '/github'"
+></div>
+<div
+  class="navbar-selected"
+  id="customization-selected"
+  *ngIf="router.url === '/customization'"
+></div>

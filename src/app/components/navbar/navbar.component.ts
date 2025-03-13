@@ -1,21 +1,17 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../shared/shared.module';
-import { RouterLink } from '@angular/router';
+import { RouterLink, Router, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  imports: [SharedModule, RouterLink],
+  imports: [SharedModule, RouterLink, RouterLinkActive],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   standalone: true,
 })
 export class NavbarComponent {
-  showSettings = false;
+  constructor(public router: Router) {}
   githubUsername = '';
-
-  toggleSettings() {
-    this.showSettings = !this.showSettings;
-  }
 
   connectToGithub() {
     if (this.githubUsername) {
