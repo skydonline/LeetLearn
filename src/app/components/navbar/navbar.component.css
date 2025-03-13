@@ -27,6 +27,7 @@
 
 a {
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 a:hover {

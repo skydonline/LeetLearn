@@ -11,7 +11,7 @@
   --green-accent-color: #45cd75;
   --background-color: #1e1e1e;
   --font-size-title: 22px;
-  --font-size-large: 16px;
+  --font-size-large: 18px;
   --font-size-medium: 14px;
   --font-size-small: 12px;
   --font-size-tiny: 10px;
@@ -31,8 +31,4 @@ body {
   background-color: var(--background-color);
   color: var(--primary-text-color);
   font-weight: 500;
-}
-
-a {
-  text-decoration: none;
 }
