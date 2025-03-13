@@ -6,15 +6,22 @@
   background-color: var(--primary-container-color);
 }
 
+#logo {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+}
+
 #title {
   font-size: var(--font-size-title);
+  margin-left: 10px;
 }
 
 #sections {
-  width: 235px;
+  width: 270px;
   color: var(--secondary-text-color);
   display: flex;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: 15px;
+  margin-left: 30px;
+  margin-right: 20px;
 }
