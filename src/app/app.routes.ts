@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { GithubComponent } from './components/github/github.component';
-import { CustomizationComponent } from './components/customization/customization.component';
+import { GithubComponent } from './pages/github/github.component';
+import { CustomizationComponent } from './pages/customization/customization.component';
 
 export const routes: Routes = [
   {

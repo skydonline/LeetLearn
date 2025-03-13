@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ToggleComponent } from '../toggle/toggle.component';
-import { HeadingComponent } from '../heading/heading.component';
+import { ToggleComponent } from '../../components/toggle/toggle.component';
+import { HeadingComponent } from '../../components/heading/heading.component';
 
 @Component({
   selector: 'app-github',
