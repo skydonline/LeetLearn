@@ -28,3 +28,7 @@ body {
   color: var(--primary-text-color);
   font-weight: 500;
 }
+
+a {
+  text-decoration: none;
+}

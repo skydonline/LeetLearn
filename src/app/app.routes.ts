@@ -5,7 +5,7 @@ import { CustomizationComponent } from './components/customization/customization
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: '/github',
+    redirectTo: 'github',
     pathMatch: 'full',
   },
   { path: 'github', component: GithubComponent },
