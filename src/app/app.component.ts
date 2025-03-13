@@ -11,5 +11,5 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'LeetLearn';
+  title: string = 'LeetLearn';
 }

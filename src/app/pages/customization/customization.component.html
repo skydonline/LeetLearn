@@ -1,1 +1,21 @@
-<app-heading text="Customization"></app-heading>
+<app-heading text="Visual" size="large"></app-heading>
+<div id="dark-mode-toggle">
+  <app-toggle
+    [text]="'Dark Mode'"
+    [isChecked]="isDarkMode"
+    (toggleChange)="toggleDarkMode()"
+  ></app-toggle>
+</div>
+<app-heading text="Content" size="large"></app-heading>
+<div class="two-toggle-container">
+  <app-toggle
+    [text]="'Popups'"
+    [isChecked]="popupsEnabled"
+    (toggleChange)="togglePopups($event)"
+  ></app-toggle>
+  <app-toggle
+    [text]="'Comments'"
+    [isChecked]="commentsEnabled"
+    (toggleChange)="toggleComments($event)"
+  ></app-toggle>
+</div>

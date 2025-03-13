@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
@@ -8,9 +8,11 @@ import { Component, Input } from '@angular/core';
 })
 export class ToggleComponent {
   @Input() text: string = 'toggle text';
-  isChecked = false;
+  @Input() isChecked: boolean = true;
+  @Output() toggleChange = new EventEmitter<boolean>();
 
   toggle() {
     this.isChecked = !this.isChecked;
+    this.toggleChange.emit(this.isChecked);
   }
 }

@@ -18,8 +18,8 @@
 }
 
 .toggle-switch {
-  width: 48px;
-  height: 22px;
+  width: 51px;
+  height: 31px;
   background-color: var(--toggle-switch-off-background);
   border-radius: 25px;
   position: absolute;
@@ -33,16 +33,17 @@
 }
 
 .toggle-switch .toggle-knob {
-  width: 21px;
-  height: 21px;
+  width: 27px;
+  height: 27px;
   background-color: var(--toggle-switch-knob);
   border-radius: 50%;
   position: absolute;
-  top: 1px;
+  top: 2px;
   left: 1px;
   transition: left 0.3s;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 0 3px 1px rgba(0, 0, 0, 0.06);
 }
 
 .toggle-switch.checked .toggle-knob {
-  left: 26px;
+  left: 23px;
 }
