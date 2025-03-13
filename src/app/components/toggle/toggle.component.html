@@ -1,3 +1,6 @@
-<div class="toggle-switch" [class.checked]="isChecked" (click)="toggle()">
-  <div class="toggle-knob"></div>
+<div class="toggle-container">
+  <p class="toggle-text">{{ text }}</p>
+  <div class="toggle-switch" [class.checked]="isChecked" (click)="toggle()">
+    <div class="toggle-knob"></div>
+  </div>
 </div>

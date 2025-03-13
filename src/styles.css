@@ -16,6 +16,8 @@
   --font-size-small: 12px;
   --font-size-tiny: 10px;
 
+  --border-radius-small: 5px;
+
   --toggle-switch-knob: #fff;
   --toggle-switch-on-background: #4caf50;
   --toggle-switch-off-background: grey;

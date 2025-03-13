@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-toggle',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './toggle.component.css',
 })
 export class ToggleComponent {
+  @Input() text: string = 'toggle text';
   isChecked = false;
 
   toggle() {
