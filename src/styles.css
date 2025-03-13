@@ -15,6 +15,10 @@
   --font-size-medium: 14px;
   --font-size-small: 12px;
   --font-size-tiny: 10px;
+
+  --toggle-switch-knob: #fff;
+  --toggle-switch-on-background: #4caf50;
+  --toggle-switch-off-background: grey;
 }
 
 html,
