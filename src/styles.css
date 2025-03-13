@@ -13,6 +13,8 @@
   --toggle-switch-on-background: #2dd257;
   --toggle-switch-off-background: #e6e5ec;
   --inactive-text-color: #797979;
+  --component-height: 40px;
+  --component-height-small: 35px;
 
   /* Dark Mode */
   --primary-text-color: #ffffff;

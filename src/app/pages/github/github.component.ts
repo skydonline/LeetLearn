@@ -8,4 +8,13 @@ import { HeadingComponent } from '../../components/heading/heading.component';
   templateUrl: './github.component.html',
   styleUrl: './github.component.css',
 })
-export class GithubComponent {}
+export class GithubComponent {
+  githubUsername: string = '';
+
+  connectToGithub() {
+    if (this.githubUsername) {
+    } else {
+      console.log('Please enter a valid GitHub username');
+    }
+  }
+}
