@@ -1,9 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { SharedModule } from '../../shared/shared.module';
 
 @Component({
   selector: 'app-textfield',
-  imports: [SharedModule],
+  standalone: true,
   templateUrl: './textfield.component.html',
   styleUrls: ['./textfield.component.css'],
 })
@@ -12,7 +11,10 @@ export class TextfieldComponent {
   @Input() model: any;
   @Output() modelChange = new EventEmitter<any>();
 
-  onInputChange(value: any) {
-    this.modelChange.emit(value);
+  onInputChange(event: Event) {
+    const inputElement = event.target as HTMLInputElement;
+    if (inputElement) {
+      this.modelChange.emit(inputElement.value);
+    }
   }
 }

@@ -2,16 +2,13 @@
   <app-heading text="GitHub"></app-heading>
   <div>
     <app-textfield
-      placeholder="Github Username"
+      placeholder="GitHub Username"
       [(model)]="githubUsername"
     ></app-textfield>
-    <input
-      id="github-token"
-      class="remove-junk"
-      type="text"
+    <app-textfield
       placeholder="GitHub Token"
-      [(ngModel)]="githubToken"
-    />
+      [(model)]="githubToken"
+    ></app-textfield>
     <button id="github-connect" class="remove-junk" (click)="connectToGithub()">
       Connect
     </button>

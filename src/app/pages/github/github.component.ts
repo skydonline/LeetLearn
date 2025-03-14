@@ -18,7 +18,7 @@ import { TextfieldComponent } from '../../components/textfield/textfield.compone
 })
 export class GithubComponent {
   githubUsername: string = '';
-  githubToken: string = ''; // Personal Access Token for GitHub API
+  githubToken: string = '';
   repositories: any[] = [];
   selectedRepo: string = '';
 
