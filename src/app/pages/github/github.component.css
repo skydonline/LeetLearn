@@ -2,18 +2,8 @@
   margin: 0 15px;
 }
 
-#github-username {
-  width: 230px;
-  height: var(--component-height);
-  border-radius: var(--border-radius-small);
-}
-
-#github-username:focus {
-  color: var(--primary-text-color);
-}
-
 #github-connect {
-  margin-left: 15px;
+  margin-top: 15px;
   width: 80px;
   height: var(--component-height-small);
   border-radius: var(--border-radius-small);
@@ -22,4 +12,8 @@
 #github-connect:hover {
   color: var(--primary-text-color);
   cursor: pointer;
+}
+
+#selectedRepo {
+  margin-bottom: 15px;
 }

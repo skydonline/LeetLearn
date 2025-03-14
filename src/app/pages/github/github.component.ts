@@ -14,7 +14,7 @@ import { TextfieldComponent } from '../../components/textfield/textfield.compone
     TextfieldComponent,
   ],
   templateUrl: './github.component.html',
-  styleUrl: './github.component.css',
+  styleUrls: ['./github.component.css', '../../../styles.css'],
 })
 export class GithubComponent {
   githubUsername: string = '';
@@ -27,10 +27,6 @@ export class GithubComponent {
   connectToGithub() {
     if (!this.githubToken) {
       console.error('GitHub token is required');
-      this.repositories = [];
-      return;
-    } else if (!this.githubUsername) {
-      console.error('GitHub username is required');
       this.repositories = [];
       return;
     }
@@ -47,6 +43,7 @@ export class GithubComponent {
         },
         (error) => {
           console.error('Error fetching repositories:', error);
+          this.repositories = [];
         }
       );
   }

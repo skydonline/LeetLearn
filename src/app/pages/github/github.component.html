@@ -2,10 +2,6 @@
   <app-heading text="GitHub"></app-heading>
   <div>
     <app-textfield
-      placeholder="GitHub Username"
-      [(model)]="githubUsername"
-    ></app-textfield>
-    <app-textfield
       placeholder="GitHub Token"
       [(model)]="githubToken"
     ></app-textfield>
@@ -24,11 +20,6 @@
         {{ repo.name }}
       </option>
     </select>
-    <!--
-    <button class="remove-junk" (click)="uploadCodeToRepo()">
-      Upload Code
-    </button>
-    -->
     <app-toggle text="Auto-commit"></app-toggle>
   </div>
 </div>

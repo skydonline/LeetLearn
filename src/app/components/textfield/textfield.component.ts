@@ -4,7 +4,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-textfield',
   standalone: true,
   templateUrl: './textfield.component.html',
-  styleUrls: ['./textfield.component.css'],
+  styleUrls: ['./textfield.component.css', '../../../styles.css'],
 })
 export class TextfieldComponent {
   @Input() placeholder: string = '';
