@@ -1,9 +1,37 @@
 <div id="github-component">
   <app-heading text="GitHub"></app-heading>
   <div>
-    <input id="github-username" type="text" placeholder="GitHub Username" />
-    <button id="github-connect">Connect</button>
+    <app-textfield
+      placeholder="Github Username"
+      [(model)]="githubUsername"
+    ></app-textfield>
+    <input
+      id="github-token"
+      class="remove-junk"
+      type="text"
+      placeholder="GitHub Token"
+      [(ngModel)]="githubToken"
+    />
+    <button id="github-connect" class="remove-junk" (click)="connectToGithub()">
+      Connect
+    </button>
   </div>
-  <app-textfield placeholder="Repository URL"></app-textfield>
-  <app-toggle text="Auto-commit"></app-toggle>
+  <div *ngIf="repositories.length > 0">
+    <app-heading text="Select Repository"></app-heading>
+    <select id="selectedRepo" class="remove-junk" [(ngModel)]="selectedRepo">
+      <option
+        class="remove-junk"
+        *ngFor="let repo of repositories"
+        [value]="repo.name"
+      >
+        {{ repo.name }}
+      </option>
+    </select>
+    <!--
+    <button class="remove-junk" (click)="uploadCodeToRepo()">
+      Upload Code
+    </button>
+    -->
+    <app-toggle text="Auto-commit"></app-toggle>
+  </div>
 </div>
