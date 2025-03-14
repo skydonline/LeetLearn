@@ -9,7 +9,7 @@
   border: none;
   padding: 0 10px;
   border-radius: var(--border-radius-small);
-  margin: 15px;
+  margin: 15px 0;
 }
 
 .textfield:focus {

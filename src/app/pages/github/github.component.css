@@ -1,5 +1,8 @@
-#github-username {
+#github-component {
   margin: 0 15px;
+}
+
+#github-username {
   width: 230px;
   height: var(--component-height);
   background-color: var(--secondary-container-color);
