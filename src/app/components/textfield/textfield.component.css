@@ -1,0 +1,17 @@
+.textfield {
+  display: flex;
+  align-items: center;
+  height: var(--component-height);
+  width: 350px;
+  color: var(--secondary-text-color);
+  background-color: var(--secondary-container-color);
+  font-size: var(--font-size-medium);
+  border: none;
+  padding: 0 10px;
+  border-radius: var(--border-radius-small);
+  margin: 15px;
+}
+
+.textfield:focus {
+  color: var(--primary-text-color);
+}
