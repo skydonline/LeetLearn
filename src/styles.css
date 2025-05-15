@@ -15,6 +15,8 @@
   --inactive-text-color: #797979;
   --component-height: 40px;
   --component-height-small: 35px;
+  --default-font: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
 
   /* Dark Mode */
   --primary-text-color: #ffffff;
@@ -40,8 +42,7 @@
 html,
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-family: var(--default-font);
   width: 400px;
   height: 600px;
   background-color: var(--background-color);

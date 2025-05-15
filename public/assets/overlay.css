@@ -1,4 +1,3 @@
-/* Overlay styles */
 #leetlearn-overlay {
   position: fixed;
   top: 0;
@@ -13,7 +12,10 @@
 }
 
 #leetlearn-overlay-content {
-  background: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  color: #ffffff;
+  background-color: #333333;
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -23,13 +25,9 @@
 #leetlearn-overlay-close {
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0b83fe;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-#leetlearn-overlay-close:hover {
-  background-color: #0056b3;
 }
