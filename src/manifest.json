@@ -21,5 +21,20 @@
   },
 
   "permissions": ["storage", "activeTab", "scripting"],
-  "host_permissions": ["https://leetcode.com/*"]
+  "host_permissions": ["https://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/*"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css", "*.js", "assets/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
 }

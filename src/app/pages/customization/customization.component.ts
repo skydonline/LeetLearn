@@ -9,7 +9,7 @@ import { ToggleComponent } from '../../components/toggle/toggle.component';
   styleUrl: './customization.component.css',
 })
 export class CustomizationComponent {
-  popupsEnabled: boolean = false;
+  popupsEnabled: boolean = true;
   commentsEnabled: boolean = false;
   isDarkMode: boolean = true;
 
